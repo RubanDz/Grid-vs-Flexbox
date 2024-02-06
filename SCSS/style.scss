@@ -1,74 +1,79 @@
 @import './reset';
+@mixin flexContainer {
+    display: flex;
+    height: 80px;
+}
+$itemHeight:160px;
+$flexBasis: 16.1%;
 
-// .flex-container {
-//     display: flex;
-//     gap: 10px;
-//     flex-wrap: wrap;
-  
-//     .flex__item {
-//         height: 80px;
-//         color: white;
-//         font-weight: 900;
-//         flex-grow: 1;
-       
-//     }
-        
-//     .item_modificaton-1 {
-//         background-color: red;
-//         flex-basis: 33.3%;
-//         // flex-grow: 1;
-//         // flex: 2;
-       
-//     }
-//     .item_modificaton-2 {
-//         background-color: orange;
-//         flex-basis: 33.3%;
-//         // flex-grow: 1;
-//         // flex: 2;
-//         // flex-grow: 2;
-//         height: 160px;
-//     }
-//     .item_modificaton-3 {
-//         background-color: green;
-//         // flex: 1;
-//         flex-basis: 16.65%;
-//         height: 160px;
-//     }
-//     .item_modificaton-4 {
-//         background-color: blue;
-//         // flex: 1;
-//         // flex-basis: 16.65%;
-//         // align-self: flex-start;
-//         // flex-grow: 2;
-//         order: 1;
-//     }
-//     .item_modificaton-5 {
-//         background-color: rgb(29, 201, 184);
-//     }
-//     .item_modificaton-6 {
-//         background-color: rgb(207, 80, 141);
-//     }
-//     .item_modificaton-7 {
-//         background-color: rgb(135, 152, 154);
-//         order: 2;
-//     }
-//     .item_modificaton-8 {
-//         background-color: rgb(92, 106, 79);
-//     }
-//     .item_modificaton-9 {
-//         background-color: rgb(28, 110, 47);
-//         flex-basis: 33.3%;
-//     }
-//     .item_modificaton-10 {
-//         background-color: rgb(153, 56, 93);
-//         flex-basis: 33.3%;
-//     }
-//     .item_modificaton-11 {
-//         background-color: rgb(34, 28, 28);
-//         order: 3;
-//     }
-// }
+.flex-container-1 {
+    @include flexContainer;
+    justify-content: space-between;
+    .flex__item {
+        flex-basis: $flexBasis;
+    }
+    .item_modificaton-1 {
+        background-color: rgb(142, 120, 120);
+        flex-grow: 1;
+    }
+    .item_modificaton-2 {
+        background-color: aqua;
+    }
+}
 
+.flex-container-2 {
+    @include flexContainer;
+    .flex__item {
+        flex-basis: $flexBasis;
+    }
+    .item_modificaton-3 {
+        background-color: rgb(15, 18, 111);
+    }
+    .item_modificaton-4 {
+        background-color: yellowgreen;
+    }
+    .item_modificaton-5 {
+        background-color: rgb(77, 13, 25);
+        height: $itemHeight;
+        align-self: flex-end;
+        flex-grow: 1;
+    }
+    .item_modificaton-6 {
+        background-color: rgb(190, 79, 100);
+        height: $itemHeight;
+        align-self: flex-end;
+    }
+    .item_modificaton-7 {
+        background-color: rgb(185, 152, 158);
+    }
+}
+
+.flex-container-3 {
+    @include flexContainer;
+    .flex__item {
+        flex-basis: $flexBasis;
+    }
+    .item_modificaton-8 {
+        background-color: red;
+    }
+    .item_modificaton-9 {
+        background-color: rgb(47, 38, 38);
+        flex-grow: 1;
+    }
+    .item_modificaton-10 {
+        background-color: rgb(58, 30, 106);
+        flex-grow: 1;
+    }
+    .item_modificaton-11 {
+        background-color: rgb(42, 183, 20);
+    }
+}
+   
+/*.............................................*/
+
+.grid-container {
+    margin-top: 40px;
+} // TODO Добавил для удобства восприятия :)
 
 .grid-container {
     display: grid;
@@ -125,4 +130,57 @@
         background-color: rgb(30, 48, 111);
     }
 }
+       
+       
+      
+       
+    
+    
+    
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
